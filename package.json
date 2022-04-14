@@ -1,0 +1,36 @@
+{
+  "name": "shopping-list-sample-component-library",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly --declaration && tsc-alias",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "primevue": "^3.10.0",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.8.0",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "prettier": "^2.5.1",
+    "prettier-eslint": "^13.0.0",
+    "sass": "^1.45.1",
+    "tsc-alias": "^1.5.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.4",
+    "vue-eslint-parser": "^8.0.1",
+    "vue-tsc": "^0.29.8"
+  }
+}
